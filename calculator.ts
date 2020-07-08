@@ -104,7 +104,7 @@ class Calculator {
     this.operator = null;
     result = result.toPrecision(12).replace(/0+$/g, '').replace(/0+e/g, 'e');
     if (result.indexOf('.') === result.length - 1) {
-      result = result.replace(/./g, '');
+      result = result.replace(/\./g, '');
     }
     if (n2 === 0) {
       result = '不是数字';
